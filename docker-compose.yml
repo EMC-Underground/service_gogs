@@ -8,7 +8,7 @@ services:
     volumes:
       - data:/data
     environment:
-       - "RUN_CROND=true"
+      - "RUN_CROND=true"
     deploy:
       labels:
         - "traefik.port=3000"
@@ -20,7 +20,7 @@ volumes:
   data:
     driver: rexray/scaleio
     driver_opts:
-      size: 100  
+      size: 100
 
 networks:
   traefik-net:
