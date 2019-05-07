@@ -9,6 +9,7 @@ services:
       - data:/data
     environment:
       - "RUN_CROND=true"
+      - "SKIP_TLS_VERIFY=true"
     deploy:
       labels:
         - "traefik.port=3000"
